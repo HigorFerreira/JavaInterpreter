@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Commands{
-    final HashMap<Integer, String> commands = new HashMap<Integer, String>();
+    final HashMap<Integer, String> commands_str = new HashMap<Integer, String>();
+    // final HashMap<Integer, Command> commands_obj = new HashMap<Integer, Command>();
     final ArrayList<Integer> line_nos = new ArrayList<Integer>();
 
     public Commands(){
@@ -13,11 +14,11 @@ public class Commands{
 
     public void add(Integer key, String value){
         line_nos.add(key);
-        commands.put(key, value);
+        commands_str.put(key, value);
     }
 
     public String get(Integer key){
-        return commands.get(key);
+        return commands_str.get(key);
     }
 
     public int indexOf(int value){
@@ -38,6 +39,6 @@ public class Commands{
     }
 
     public HashMap<Integer, String> getCommands(){
-        return commands;
+        return commands_str;
     }
 }
