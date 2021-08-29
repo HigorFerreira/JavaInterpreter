@@ -1,11 +1,16 @@
 import components.*;
 
 import java.util.regex.Pattern;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Stack;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import components.Commands;
 import components.Executor;
+import java.util.Collection;
 
 public class Interpreter {
     public static void main(String[] args) throws Exception{
@@ -35,11 +40,15 @@ public class Interpreter {
         //     put("Age", "23");
         // }});
 
-        Executor ex = new Executor(){
-            @Override
-            public void execute() {
-                System.out.println("Overrided method");
-            }
-        };
+        System.out.println(
+            Arrays.asList("a .gt. b .and. logic .or. higor .xor. some".split("\\.((and)|(or)|(xor))\\."))
+        );
+        System.out.println(
+            Arrays.asList("".split("\\.((and)|(or)|(xor))\\."))
+        );
+
+        System.out.println(
+            Arrays.asList(".not a".split("\\.((and)|(or)|(xor))\\."))
+        );
     }
 }
