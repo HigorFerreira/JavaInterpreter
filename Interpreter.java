@@ -195,7 +195,7 @@ public class Interpreter {
                         memory.put(id_var, Utils.getVarOrLiteralOrArithmetic(right_operand, memory));
                     }
                     else {
-                        throw new InterpreterError("1Comando " + command + " não reconhecido", line);
+                        throw new InterpreterError("Comando " + command + " não reconhecido", line);
                     }
         
                 }
