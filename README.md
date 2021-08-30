@@ -1,9 +1,30 @@
 # Java language interpreter
 
-<a href='https://github.com/ReactiveX/RxJava/actions?query=workflow%3ASnapshot'><img src='https://github.com/ReactiveX/RxJava/workflows/Snapshot/badge.svg'></a>
-[![codecov.io](http://codecov.io/github/ReactiveX/RxJava/coverage.svg?branch=3.x)](https://codecov.io/gh/ReactiveX/RxJava/branch/3.x)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.reactivex.rxjava3/rxjava/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.reactivex.rxjava3/rxjava)
+A college project that implements a simple language interpreter to intruduce the knowledge of compilers and how they works.
+This matter is taught by **Claudio Martins Garcia** at **Pontifícia Universidade Católica de Goiás** \
+Date: **30/08/2021**
 
-RxJava is a Java VM implementation of [Reactive Extensions](http://reactivex.io): a library for composing asynchronous and event-based programs by using observable sequences.
+####Student
+Higor Ferreira Alves Santos
 
-It extends the [observer pattern](http://en.wikipedia.org/wiki/Observer_pattern) to support sequences of data/events and adds operators that allow you to compose sequences together declaratively while abstracting away concerns about things like low-level threading, synchronization, thread-safety and concurrent data structures.
+####Resume
+This is a college project that challenges students in building a language interpreter that interprets a language specified by the class teacher. \
+The specification could been found in **docs/Interpretador.docx**
+
+
+####Compile & run
+This code was developed using **openjdk 14.0.2**. To compile it, it needs the Java Development Kit to be installed in the machine. Once it's installed, run:
+
+```bash
+javac *.java -d .
+```
+This command will compile the entire project in java bytecodes to be interpreted by JVM.
+When compiled, it needs to pass the file that would be interpreted. This file have to be writen under specifications defined by class teacher. \
+There are two ways in which the file can be passed: by command line, or when the program is called. There are an example of file called **input.txt** on the root folder, this one could be passed by command line using:
+```bash
+java Interpreter ./input.txt
+```
+If the file isn't passed on command line, the program will prompt the user for the file in which he want to be interpreted
+```bash
+java Interpreter
+```
