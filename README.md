@@ -4,15 +4,15 @@ A college project that implements a simple language interpreter to intruduce the
 This matter is taught by **Claudio Martins Garcia** at **Pontifícia Universidade Católica de Goiás** \
 Date: **30/08/2021**
 
-####Student
+#### Student
 Higor Ferreira Alves Santos
 
-####Resume
+#### Resume
 This is a college project that challenges students in building a language interpreter that interprets a language specified by the class teacher. \
 The specification could been found in **docs/Interpretador.docx**
 
 
-####Compile & run
+#### Compile & run
 This code was developed using **openjdk 14.0.2**. To compile it, it needs the Java Development Kit to be installed in the machine. Once it's installed, run:
 
 ```bash
